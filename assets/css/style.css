@@ -1,0 +1,30 @@
+body {
+    
+    background-image: url("../images/astronomy-crater-dark-459475.jpg");
+    background-position: center;
+    color: white;
+}
+
+.container {
+    text-align: center;
+}
+
+.letter-color {
+    color: green;
+}
+
+#leftr {
+    color: red;
+}
+
+#Wins {
+    color: green;
+}
+
+#losses {
+    color: blue;
+}
+
+#losses, #Wins {
+    font-weight: bold;
+}

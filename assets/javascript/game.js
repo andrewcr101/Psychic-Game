@@ -52,7 +52,11 @@ var updatelettertoguess = function(){
 
 //Guess so far being shown on screen.
 var updateguessSoFar = function(){
-    document.getElementById('left').innerHTML = "Your guess so far: " + guessedLetter.join(', ');
+    document.getElementById('leftr').innerHTML =  guessedLetter.join(', ');
+};
+
+function reloadfunction() {
+    location.reload();
 };
 
 
@@ -91,7 +95,7 @@ document.onkeydown = function(event) {
     // choice that the computer randomly chooses.    
    var userGuess = event.key.toLowerCase();
 
-   var letters = /^[A-Aa-z]+$/;      
+   //var letters = /^[A-Aa-z]+$/;  Do not need anymore    
     if (alphabet.indexOf(userGuess) >= 0){
         if (guessesLeft > 0){
             if (userGuess === computerChoice){
@@ -120,7 +124,7 @@ document.onkeydown = function(event) {
     }
     
     }else{
-        alert("Please choose valide character");
+        alert("Please choose valid character");
     }
     
 }
